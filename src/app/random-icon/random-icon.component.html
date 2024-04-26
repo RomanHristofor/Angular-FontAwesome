@@ -1,0 +1,16 @@
+<div *ngIf="loading">
+  Loading...
+</div>
+
+<button
+  *ngIf="!loading"
+  (click)="showRandomIcon()"
+>
+  Click me!
+</button>
+
+<div class="icon-display"
+     *ngIf="currentIcon && !loading"
+>
+  <fa-icon [icon]="currentIcon"></fa-icon>
+</div>

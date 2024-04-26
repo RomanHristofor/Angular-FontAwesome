@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {RandomIconComponent} from "./random-icon/random-icon.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RandomIconComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.sass'
 })
 export class AppComponent {
-  title = 'my-angular-project';
+  title = 'Font Awesome & Angular';
 }
